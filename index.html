@@ -64,7 +64,6 @@ select{width:100%;height:44px;padding:0 10px;font:inherit;font-size:16px;color:v
 .tl .nd{top:26px;height:16px;border-radius:8px;background:var(--card);border:4px solid var(--aq)}
 .tl .nd.dp{border-color:var(--pri);border-radius:4px}
 .tl .nd.sbn{border-style:dashed}
-.tl .nd.rs{top:28px;width:12px;height:12px;border:3px solid var(--mu);border-radius:50%}
 .tl .nd.c{border-color:var(--ok);background:var(--gt)}
 .tl .nd.x{border-color:var(--er);background:var(--rt)}
 .tl .lb{top:44px;transform:translateX(-50%);text-align:center;white-space:nowrap;font-size:11px;line-height:1.2;color:var(--tx)}
@@ -137,7 +136,7 @@ select{height:48px;padding:0 13px;border-radius:10px;font-size:15px;box-shadow:0
 .meta b{margin-top:3px;font-size:18px;font-weight:700;letter-spacing:0}
 .meta small{margin-top:3px;font-size:11px;font-weight:550;letter-spacing:0;text-transform:none}
 .duty-pick label{margin:0 0 5px;color:var(--mu);font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;white-space:nowrap}
-.duty-pick select{width:100%;height:38px;padding:0 8px;font-size:14px}
+.duty-pick select{width:100%;height:42px;padding:0 6px;font-size:18px;font-weight:700;text-align:center;text-align-last:center}
 .tl{height:92px;margin:12px 0 0;border:0;border-radius:0;background:transparent;box-shadow:none}
 .tr{margin-top:10px;border-radius:12px;box-shadow:0 3px 10px rgba(18,59,87,.035)}
 .tr.done{opacity:.48}
@@ -279,7 +278,7 @@ function tlBuild(D){
   var sg=add('sg '+kind,'<i class="pf"></i>','left:'+X(a)+'px;width:'+(X(b)-X(a))+'px');
   var g={a:a,b:b,els:[sg],pf:sg.firstChild};
   if(rn){var mid=(a+b)/2,gp=Math.round(b-a);
-   g.els.push(add('nd rs','','left:'+(X(mid)-6)+'px'),add('lb up','<b>'+rn+'</b><small>'+(gp>=60?Math.floor(gp/60)+'h ':'')+(gp%60?gp%60+'m':'')+'</small>','left:'+X(mid)+'px'))}
+   g.els.push(add('lb up','<b>'+rn+'</b><small>'+(gp>=60?Math.floor(gp/60)+'h ':'')+(gp%60?gp%60+'m':'')+'</small>','left:'+X(mid)+'px'))}
   G.push(g)});
  S.forEach(function(s0){var w=(s0.t2-s0.t)*PX;
   s0.els.push(add('nd '+(s0.k==='dp'?'dp':(s0.k==='sb'?'sbn':'')),'','left:'+(X(s0.t)-8)+'px;width:'+(w+16)+'px'),
