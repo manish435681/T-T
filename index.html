@@ -80,6 +80,35 @@ select{width:100%;height:44px;padding:0 10px;font:inherit;font-size:16px;color:v
 .tband{position:absolute;left:50%;top:3px;bottom:3px;width:72px;margin-left:-36px;border-radius:12px;background:rgba(127,140,150,.14);opacity:0;transition:opacity .2s;z-index:1;pointer-events:none}
 .tl.dg .tband{opacity:1}
 .tl.dg .tchip{background:var(--pri);color:var(--card)}
+@media (max-width:360px){
+ .w{padding-left:10px;padding-right:10px}
+ .hd{padding:12px 12px}
+ h1{font-size:18px}
+ .hero{padding:12px}
+ .big{font-size:40px}
+ .meta{gap:4px}
+ .meta div{padding:7px 4px}
+ .meta b{font-size:15px}
+ .seg{gap:4px}
+ .seg button{font-size:13px}
+ .tr.run{transform:none}
+ .tr,.tr.run{padding-left:10px;padding-right:10px}
+ .th{gap:6px}
+ .th>span:first-child{min-width:0}
+ .tr.run .th{font-size:15px}
+ .lc{grid-template-columns:minmax(0,.8fr) minmax(70px,1.2fr) minmax(0,.8fr);gap:4px}
+ .lc b,.lc span{overflow-wrap:anywhere}
+ .lg.ln{overflow-wrap:anywhere}
+ .tl .lb{font-size:10px}
+}
+@media (max-width:300px){
+ .w{padding-left:6px;padding-right:6px}
+ .big{font-size:36px}
+ .meta b{font-size:14px}
+ .meta small{font-size:9px}
+ .tr.run .bg,.bk.on{min-width:90px}
+ .lc{grid-template-columns:minmax(0,.7fr) minmax(64px,1.3fr) minmax(0,.7fr)}
+}
 </style></head><body><div class="w">
 <header class="hd"><h1>Duty Trip Timer</h1><p class="sub" id="sub"></p></header>
 <div class="seg" id="seg"><button data-k="weekday">Weekday</button><button data-k="saturday">Saturday</button><button data-k="sunday">Sunday</button></div>
